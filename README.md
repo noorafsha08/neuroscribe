@@ -102,7 +102,7 @@ Create a `.env` file in both `frontend/` and `backend/` directories with:
 ---
 
 ## 📁 Project Structure
-
+```bash
 neuroscribe/
 ├── backend/ # Node.js/Flask API server
 │ ├── controllers/ # API logic controllers
@@ -123,35 +123,10 @@ neuroscribe/
 ├── package.json # Project dependencies and scripts
 └── README.md # Project documentation
 
-
-## 📁 Project Structure
-
-| Path             | Description                        |
-|------------------|------------------------------------|
-| backend/         | Node.js / Flask API server        |
-| ├── controllers/ | API logic controllers             |
-| ├── models/      | Database models                   |
-| ├── routes/      | API routes                        |
-| ├── app.js       | Express app configuration         |
-| └── server.js    | Entry point for backend           |
-| frontend/        | React frontend application        |
-| ├── public/      | Static assets                     |
-| ├── src/         | Source code folder                |
-| │ ├── components/| Reusable UI components            |
-| │ ├── pages/     | Page components                   |
-| │ ├── styles/    | Tailwind and global styles        |
-| │ ├── App.jsx    | Main app component                |
-| │ ├── Routes.jsx | Application routes                |
-| │ └── index.jsx  | Entry point                       |
-| .env             | Environment variables             |
-| package.json     | Project dependencies and scripts  |
-| README.md        | Project documentation             |
-
-
 ---
-
+```
 ## 🧠 AI/NLP Integration
-
+``
 ### ⚗️ Option 1 – Using Flask microservice:
 
 - Set up a Python Flask server with HuggingFace Transformers.
@@ -185,7 +160,7 @@ Built with **Tailwind CSS**, includes:
 
 ## 🔄 Adding Routes Example
 
-Update `Routes.jsx` to add new pages:
+`Update `Routes.jsx` to add new pages:
 
 - `import { useRoutes } from "react-router-dom";`
 - `import HomePage from "pages/HomePage";`
@@ -202,18 +177,18 @@ const ProjectRoutes = () => {
   return element;
 };
 
-export default ProjectRoutes;
+export default ProjectRoutes;`
 
 ---
-
+```
 ## 📊 Data Visualisation
-
+``
 This app uses **D3.js and Recharts** to plot user emotion trends weekly and monthly for better mental health awareness.
 
 ---
 
 ## 📦 Deployment
-
+``
 ### ⚙️ Build for production:
 
 - `npm run build`
