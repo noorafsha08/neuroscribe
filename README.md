@@ -79,6 +79,7 @@ NeuroScribe is a **full-stack web and mobile application** integrating **AI-powe
 
 ##  📁 Project Structure
 
+  ```bash
 neuroscribe/
 ├── backend/             # Node.js/Flask API server
 │   ├── controllers/     # API logic controllers
@@ -130,7 +131,7 @@ Framer Motion for smooth animations
 ##  🔄 Adding Routes Example
 Update Routes.jsx to add new pages:
 
- ```jssx
+ ```bash
 import { useRoutes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import NotesPage from "pages/NotesPage";
