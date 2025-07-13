@@ -107,7 +107,7 @@ Create API endpoints to process text input and return detected emotions.
 
 Install Python packages:
 
-''' bash
+ ```bash
 pip install flask transformers torch
 
 
@@ -130,9 +130,7 @@ Framer Motion for smooth animations
 ##  🔄 Adding Routes Example
 Update Routes.jsx to add new pages:
 
-jsx
-Copy
-Edit
+ ```jssx
 import { useRoutes } from "react-router-dom";
 import HomePage from "pages/HomePage";
 import NotesPage from "pages/NotesPage";
