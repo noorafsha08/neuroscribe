@@ -78,7 +78,7 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret_key
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 
-📁 Project Structure
+##  📁 Project Structure
 ```php
 neuroscribe/
 ├── backend/             # Node.js/Flask API server
@@ -100,7 +100,7 @@ neuroscribe/
 ├── package.json         # Project dependencies and scripts
 └── README.md            # Project documentation
 
-🧠 AI/NLP Integration
+##  🧠 AI/NLP Integration
 Option 1 – Using Flask microservice:
 Set up a Python Flask server with HuggingFace Transformers.
 
@@ -113,7 +113,7 @@ pip install flask transformers torch
 
 
 
-🎨 Styling
+##  🎨 Styling
 Built with Tailwind CSS, includes:
 
 Forms plugin
@@ -128,7 +128,7 @@ Fluid typography
 
 Framer Motion for smooth animations
 
-🔄 Adding Routes Example
+##  🔄 Adding Routes Example
 Update Routes.jsx to add new pages:
 
 jsx
@@ -149,10 +149,10 @@ const ProjectRoutes = () => {
 };
 
 export default ProjectRoutes;
-📊 Data Visualisation
+##  📊 Data Visualisation
 This app uses D3.js and Recharts to plot user emotion trends weekly and monthly for better mental health awareness.
 
-📦 Deployment
+##  📦 Deployment
 Build for production:
 
 bash
@@ -161,10 +161,10 @@ Edit
 npm run build
 Deploy frontend to Vercel/Netlify and backend to Render/Railway/Heroku.
 
-📱 Mobile App Version
+##  📱 Mobile App Version
 A React Native version is planned to extend NeuroScribe to Android and iOS with the same backend API for seamless cross-platform usage.
 
-💡 Future Enhancements
+##  💡 Future Enhancements
 Voice note input with speech-to-text
 
 Personalised AI suggestions based on user trends
@@ -173,7 +173,7 @@ Dark mode support
 
 Full offline capability
 
-🙏 Acknowledgements
+##  🙏 Acknowledgements
 React – Frontend library
 
 HuggingFace Transformers – NLP models
@@ -186,7 +186,7 @@ Spotify API – Music suggestions
 
 Firebase – Authentication and Firestore
 
-❤️ Built With
+##  ❤️ Built With
 Built with passion to merge mental health awareness with productivity using modern web and AI technologies.
 
 ✨ Connect with Me
