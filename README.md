@@ -79,6 +79,7 @@ JWT_SECRET=your_jwt_secret_key
 HUGGINGFACE_API_KEY=your_huggingface_api_key
 
 📁 Project Structure
+```php
 neuroscribe/
 ├── backend/             # Node.js/Flask API server
 │   ├── controllers/     # API logic controllers
