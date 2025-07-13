@@ -1,107 +1,182 @@
-# React
+📝 NeuroScribe – Emotion-Based Note Taking & Productivity App
+NeuroScribe is a React-based full-stack application that integrates AI-powered sentiment analysis with note-taking and daily task planning. It enhances productivity and mental well-being by understanding user emotions in real-time and providing personalised suggestions.
 
-A modern React-based project utilizing the latest frontend technologies and tools for building responsive web applications.
+🚀 Features
+🧠 AI Sentiment Analysis – Detects emotional tone in notes/tasks using NLP models.
 
-## 🚀 Features
+📝 Emotion-Tagged Notes & Tasks – Categorise entries based on detected moods.
 
-- **React 18** - React version with improved rendering and concurrent features
-- **Vite** - Lightning-fast build tool and development server
-- **Redux Toolkit** - State management with simplified Redux setup
-- **TailwindCSS** - Utility-first CSS framework with extensive customization
-- **React Router v6** - Declarative routing for React applications
-- **Data Visualization** - Integrated D3.js and Recharts for powerful data visualization
-- **Form Management** - React Hook Form for efficient form handling
-- **Animation** - Framer Motion for smooth UI animations
-- **Testing** - Jest and React Testing Library setup
+📊 Emotion Trends Visualisation – View weekly/monthly emotion trends via interactive charts.
 
-## 📋 Prerequisites
+🎶 Smart Suggestions – Motivational quotes, breathing exercises, or Spotify playlists based on mood.
 
-- Node.js (v14.x or higher)
-- npm or yarn
+🔍 Emotion-Based Search Filters – Retrieve notes by specific emotional tags.
 
-## 🛠️ Installation
+🔐 Secure Authentication – JWT/Firebase authentication for user accounts.
 
-1. Install dependencies:
-   ```bash
-   npm install
-   # or
-   yarn install
-   ```
-   
-2. Start the development server:
-   ```bash
-   npm start
-   # or
-   yarn start
-   ```
+🌐 Responsive Design – Works seamlessly on mobile and desktop.
 
-## 📁 Project Structure
+🎨 Modern UI – Clean and minimal interface with Tailwind CSS and Framer Motion animations.
 
-```
-react_app/
-├── public/             # Static assets
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Page components
-│   ├── styles/         # Global styles and Tailwind configuration
-│   ├── App.jsx         # Main application component
-│   ├── Routes.jsx      # Application routes
-│   └── index.jsx       # Application entry point
-├── .env                # Environment variables
-├── index.html          # HTML template
-├── package.json        # Project dependencies and scripts
-├── tailwind.config.js  # Tailwind CSS configuration
-└── vite.config.js      # Vite configuration
-```
+🛠️ Tech Stack
+Frontend: React.js (18), React Native (optional for mobile version), Tailwind CSS
 
-## 🧩 Adding Routes
+State Management: Redux Toolkit
 
-To add new routes to the application, update the `Routes.jsx` file:
+Routing: React Router v6
 
-```jsx
+Backend: Node.js + Express.js OR Python Flask for AI microservice APIs
+
+NLP: HuggingFace Transformers (BERT / DistilBERT)
+
+Database: MongoDB / Firebase Firestore
+
+Authentication: Firebase Auth / JWT
+
+Data Visualisation: D3.js, Recharts
+
+Animations: Framer Motion
+
+Deployment: Vercel / Netlify (frontend), Render / Railway (backend)
+
+📋 Prerequisites
+Node.js (v14.x or higher)
+
+npm or yarn
+
+Python 3.x (if using Flask microservice for NLP)
+
+🖥️ Installation & Setup
+Clone the repository:
+
+bash
+Copy
+Edit
+git clone https://github.com/yourusername/neuroscribe.git
+cd neuroscribe
+Install frontend dependencies:
+
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+Start frontend development server:
+
+bash
+Copy
+Edit
+npm start
+# or
+yarn start
+Set up backend API:
+
+Navigate to the backend folder
+
+Install dependencies
+
+Start the backend server
+
+Set environment variables in .env file for API URLs, database URI, and API keys.
+
+📁 Project Structure
+bash
+Copy
+Edit
+neuroscribe/
+├── backend/             # Node.js/Flask API server
+├── frontend/
+│   ├── public/          # Static assets
+│   ├── src/
+│   │   ├── components/  # Reusable UI components
+│   │   ├── pages/       # Page components
+│   │   ├── styles/      # Tailwind and global styles
+│   │   ├── App.jsx      # Main app component
+│   │   ├── Routes.jsx   # Application routes
+│   │   └── index.jsx    # Entry point
+├── .env                 # Environment variables
+├── package.json         # Project dependencies and scripts
+└── README.md            # Project documentation
+🧠 AI/NLP Integration
+This project uses HuggingFace Transformers for sentiment analysis:
+
+Model: DistilBERT (sentiment classification)
+
+Access via Python Flask microservice or HuggingFace Inference API
+
+🎨 Styling
+Built with Tailwind CSS, includes:
+
+Forms plugin
+
+Typography plugin
+
+Aspect ratio plugin
+
+Container queries
+
+Fluid typography
+
+Framer Motion for smooth animations
+
+🔄 Adding Routes Example
+Update Routes.jsx to add new pages:
+
+jsx
+Copy
+Edit
 import { useRoutes } from "react-router-dom";
 import HomePage from "pages/HomePage";
-import AboutPage from "pages/AboutPage";
+import NotesPage from "pages/NotesPage";
 
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/", element: <HomePage /> },
-    { path: "/about", element: <AboutPage /> },
+    { path: "/notes", element: <NotesPage /> },
     // Add more routes as needed
   ]);
 
   return element;
 };
-```
 
-## 🎨 Styling
+export default ProjectRoutes;
+📦 Deployment
+Build for production:
 
-This project uses Tailwind CSS for styling. The configuration includes:
-
-- Forms plugin for form styling
-- Typography plugin for text styling
-- Aspect ratio plugin for responsive elements
-- Container queries for component-specific responsive design
-- Fluid typography for responsive text
-- Animation utilities
-
-## 📱 Responsive Design
-
-The app is built with responsive design using Tailwind CSS breakpoints.
-
-
-## 📦 Deployment
-
-Build the application for production:
-
-```bash
+bash
+Copy
+Edit
 npm run build
-```
+Deploy frontend to Vercel/Netlify and backend to Render/Railway/Heroku.
 
-## 🙏 Acknowledgments
+📱 Mobile App Version
+A React Native version is planned to extend NeuroScribe to Android and iOS with the same backend API for seamless cross-platform usage.
 
-- Built with [Rocket.new](https://rocket.new)
-- Powered by React and Vite
-- Styled with Tailwind CSS
+🙏 Acknowledgements
+React – Frontend library
 
-Built with ❤️ on Rocket.new
+HuggingFace Transformers – NLP models
+
+Tailwind CSS – Styling
+
+Framer Motion – Animations
+
+Spotify API – Music suggestions
+
+Firebase – Authentication & Firestore
+
+💡 Future Enhancements
+Voice note input with speech-to-text
+
+Personalised AI suggestions based on user trends
+
+Dark mode support
+
+Full offline capability
+
+❤️ Built With
+Built with passion to merge mental health awareness with productivity using modern web technologies.
+
+✨ Connect with Me
+LinkedIn | GitHub
