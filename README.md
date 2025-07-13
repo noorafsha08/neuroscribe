@@ -70,6 +70,14 @@ NeuroScribe is a **full-stack web and mobile application** integrating **AI-powe
 - Start the backend server
 
 5. **Set environment variables in a .env file for API URLs, database URI, and API keys.**
+   Create a .env file in both frontend/ and backend/ directories as needed, and add:
+
+  ```ini 
+   REACT_APP_API_URL=http://localhost:5000/api
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+HUGGINGFACE_API_KEY=your_huggingface_api_key
+
 
 📁 Project Structure
 bash
