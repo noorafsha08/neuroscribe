@@ -42,100 +42,132 @@ NeuroScribe is a **full-stack web and mobile application** integrating **AI-powe
 
 ## 🖥️ Installation & Setup
 
-1. **Clone the repository:**
+### 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/yourusername/neuroscribe.git
-   cd neuroscribe
-   
-2. **Install frontend dependencies:**
-   
-   ```bash
-   npm install
-   # or
-   yarn install
-3. **Start frontend development server:**
-   
-    ```bash
-   npm start
-   # or
-   yarn start
+- `git clone https://github.com/yourusername/neuroscribe.git`
+- `cd neuroscribe`
 
-4. **Set up backend API::**
+---
 
-- Navigate to the backend/ folder
+### 2. Install frontend dependencies:
 
-- Install backend dependencies
+- `cd frontend`
+- `npm install`
+- or
+- `yarn install`
 
-- Start the backend server
+---
 
-5. **Set environment variables in a .env file for API URLs, database URI, and API keys.**
-   Create a .env file in both frontend/ and backend/ directories as needed, and add:
+### 3. Start frontend development server:
 
-   REACT_APP_API_URL=http://localhost:5000/api
-   MONGO_URI=your_mongodb_connection_string
-   JWT_SECRET=your_jwt_secret_key
-   HUGGINGFACE_API_KEY=your_huggingface_api_key
+- `npm start`
+- or
+- `yarn start`
 
-##  📁 Project Structure
+---
 
-  ```bash
+### 4. Set up backend API:
+
+#### 📂 Navigate to the backend folder:
+
+- `cd ../backend`
+
+---
+
+#### 📦 Install backend dependencies:
+
+- `npm install`
+- or
+- `yarn install`
+
+---
+
+#### 🚀 Start the backend server:
+
+- `npm start`
+- or
+- `yarn start`
+
+---
+
+### 5. Set environment variables:
+
+Create a `.env` file in both `frontend/` and `backend/` directories with:
+
+- `REACT_APP_API_URL=http://localhost:5000/api`
+- `MONGO_URI=your_mongodb_connection_string`
+- `JWT_SECRET=your_jwt_secret_key`
+- `HUGGINGFACE_API_KEY=your_huggingface_api_key`
+
+---
+
+## 📁 Project Structure
+
 neuroscribe/
-├── backend/             # Node.js/Flask API server
-│   ├── controllers/     # API logic controllers
-│   ├── models/          # Database models
-│   ├── routes/          # API routes
-│   ├── app.js           # Express app configuration
-│   └── server.js        # Entry point for backend
+├── backend/ # Node.js/Flask API server
+│ ├── controllers/ # API logic controllers
+│ ├── models/ # Database models
+│ ├── routes/ # API routes
+│ ├── app.js # Express app configuration
+│ └── server.js # Entry point for backend
 ├── frontend/
-│   ├── public/          # Static assets
-│   ├── src/
-│   │   ├── components/  # Reusable UI components
-│   │   ├── pages/       # Page components
-│   │   ├── styles/      # Tailwind and global styles
-│   │   ├── App.jsx      # Main app component
-│   │   ├── Routes.jsx   # Application routes
-│   │   └── index.jsx    # Entry point
-├── .env                 # Environment variables
-├── package.json         # Project dependencies and scripts
-└── README.md            # Project documentation
-
-##  🧠 AI/NLP Integration
-Option 1 – Using Flask microservice:
-Set up a Python Flask server with HuggingFace Transformers.
-
-Create API endpoints to process text input and return detected emotions.
-
-Install Python packages:
-
- ```bash
-pip install flask transformers torch
+│ ├── public/ # Static assets
+│ ├── src/
+│ │ ├── components/ # Reusable UI components
+│ │ ├── pages/ # Page components
+│ │ ├── styles/ # Tailwind and global styles
+│ │ ├── App.jsx # Main app component
+│ │ ├── Routes.jsx # Application routes
+│ │ └── index.jsx # Entry point
+├── .env # Environment variables
+├── package.json # Project dependencies and scripts
+└── README.md # Project documentation
 
 
+---
 
-##  🎨 Styling
-Built with Tailwind CSS, includes:
+## 🧠 AI/NLP Integration
 
-Forms plugin
+### ⚗️ Option 1 – Using Flask microservice:
 
-Typography plugin
+- Set up a Python Flask server with HuggingFace Transformers.
+- Create API endpoints to process text input and return detected emotions.
 
-Aspect ratio plugin
+#### 📦 Install Python packages:
 
-Container queries
+- `pip install flask transformers torch`
 
-Fluid typography
+---
 
-Framer Motion for smooth animations
+### ⚗️ Option 2 – Using HuggingFace Inference API directly:
 
-##  🔄 Adding Routes Example
-Update Routes.jsx to add new pages:
+- Obtain your API key from HuggingFace.
+- Make POST requests to their hosted sentiment model endpoint.
 
- ```bash
-import { useRoutes } from "react-router-dom";
-import HomePage from "pages/HomePage";
-import NotesPage from "pages/NotesPage";
+---
 
+## 🎨 Styling
+
+Built with **Tailwind CSS**, includes:
+
+- Forms plugin
+- Typography plugin
+- Aspect ratio plugin
+- Container queries
+- Fluid typography
+- **Framer Motion** for smooth animations
+
+---
+
+## 🔄 Adding Routes Example
+
+Update `Routes.jsx` to add new pages:
+
+- `import { useRoutes } from "react-router-dom";`
+- `import HomePage from "pages/HomePage";`
+- `import NotesPage from "pages/NotesPage";`
+
+```jsx
 const ProjectRoutes = () => {
   let element = useRoutes([
     { path: "/", element: <HomePage /> },
@@ -147,49 +179,67 @@ const ProjectRoutes = () => {
 };
 
 export default ProjectRoutes;
-##  📊 Data Visualisation
-This app uses D3.js and Recharts to plot user emotion trends weekly and monthly for better mental health awareness.
+## 📊 Data Visualisation
 
-##  📦 Deployment
-Build for production:
+This app uses **D3.js and Recharts** to plot user emotion trends weekly and monthly for better mental health awareness.
 
-bash
-Copy
-Edit
-npm run build
-Deploy frontend to Vercel/Netlify and backend to Render/Railway/Heroku.
+---
 
-##  📱 Mobile App Version
-A React Native version is planned to extend NeuroScribe to Android and iOS with the same backend API for seamless cross-platform usage.
+## 📦 Deployment
 
-##  💡 Future Enhancements
-Voice note input with speech-to-text
+### ⚙️ Build for production:
 
-Personalised AI suggestions based on user trends
+- `npm run build`
 
-Dark mode support
+---
 
-Full offline capability
+### 🚀 Deploy
 
-##  🙏 Acknowledgements
-React – Frontend library
+- Deploy frontend to **Vercel** or **Netlify**.
+- Deploy backend to **Render**, **Railway**, or **Heroku**.
 
-HuggingFace Transformers – NLP models
+---
 
-Tailwind CSS – Styling
+### ⚙️ Set production environment variables:
 
-Framer Motion – Animations
+- Configure them in your hosting dashboards as per production requirements.
 
-Spotify API – Music suggestions
+---
 
-Firebase – Authentication and Firestore
+## 📱 Mobile App Version
 
-##  ❤️ Built With
-Built with passion to merge mental health awareness with productivity using modern web and AI technologies.
+A **React Native version** is planned to extend NeuroScribe to Android and iOS with the same backend API for seamless cross-platform usage.
 
-✨ Connect with Me
-LinkedIn | GitHub
+---
 
+## 💡 Future Enhancements
 
+- 🗣️ Voice note input with speech-to-text
+- 🧠 Personalised AI suggestions based on user trends
+- 🌙 Dark mode support
+- 🔄 Full offline capability
 
+---
 
+## 🙏 Acknowledgements
+
+- **React** – Frontend library
+- **HuggingFace Transformers** – NLP models
+- **Tailwind CSS** – Styling
+- **Framer Motion** – Animations
+- **Spotify API** – Music suggestions
+- **Firebase** – Authentication and Firestore
+
+---
+
+## ❤️ Built With
+
+Built with passion to merge **mental health awareness with productivity** using modern web and AI technologies.
+
+---
+
+## ✨ Connect with Me
+
+[LinkedIn](https://linkedin.com/in/noorafsha08) | [GitHub](https://github.com/noorfsha08)
+
+---
