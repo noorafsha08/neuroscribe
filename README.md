@@ -1,84 +1,75 @@
-📝 NeuroScribe – Emotion-Based Note Taking & Productivity App
-NeuroScribe is a React-based full-stack application that integrates AI-powered sentiment analysis with note-taking and daily task planning. It enhances productivity and mental well-being by understanding user emotions in real-time and providing personalised suggestions.
+# 📝 NeuroScribe – Emotion-Based Note Taking & Productivity App
 
-🚀 Features
-🧠 AI Sentiment Analysis – Detects emotional tone in notes/tasks using NLP models.
+NeuroScribe is a **full-stack web and mobile application** integrating **AI-powered sentiment analysis** with note-taking and task planning. It enhances productivity and mental well-being by understanding user emotions in real-time and providing personalised suggestions.
 
-📝 Emotion-Tagged Notes & Tasks – Categorise entries based on detected moods.
+---
 
-📊 Emotion Trends Visualisation – View weekly/monthly emotion trends via interactive charts.
+## 🚀 Features
 
-🎶 Smart Suggestions – Motivational quotes, breathing exercises, or Spotify playlists based on mood.
+- 🧠 **AI Sentiment Analysis** – Detect emotional tone in notes and tasks using NLP models.
+- 📝 **Emotion-Tagged Notes & Tasks** – Categorise entries based on detected moods.
+- 📊 **Emotion Trends Visualisation** – View weekly and monthly emotional trends via interactive charts.
+- 🎶 **Smart Suggestions** – Motivational quotes, breathing exercises, or Spotify playlists based on mood.
+- 🔍 **Emotion-Based Search Filters** – Retrieve notes by specific emotional tags.
+- 🔐 **Secure Authentication** – JWT or Firebase authentication for user accounts.
+- 🌐 **Responsive Design** – Works seamlessly on mobile and desktop.
+- 🎨 **Modern UI** – Clean, minimal interface with Tailwind CSS and Framer Motion animations.
 
-🔍 Emotion-Based Search Filters – Retrieve notes by specific emotional tags.
+---
 
-🔐 Secure Authentication – JWT/Firebase authentication for user accounts.
+## 🛠️ Tech Stack
 
-🌐 Responsive Design – Works seamlessly on mobile and desktop.
+- **Frontend:** React.js (18), Tailwind CSS, React Router v6
+- **Mobile (Planned):** React Native or Kotlin (Android)
+- **State Management:** Redux Toolkit
+- **Backend:** Node.js + Express.js OR Python Flask for AI microservice
+- **NLP:** HuggingFace Transformers (BERT / DistilBERT)
+- **Database:** MongoDB / Firebase Firestore
+- **Authentication:** Firebase Auth / JWT
+- **Data Visualisation:** D3.js, Recharts
+- **Animations:** Framer Motion
+- **Deployment:** Vercel / Netlify (frontend), Render / Railway / Heroku (backend)
 
-🎨 Modern UI – Clean and minimal interface with Tailwind CSS and Framer Motion animations.
+---
 
-🛠️ Tech Stack
-Frontend: React.js (18), React Native (optional for mobile version), Tailwind CSS
+## 📋 Prerequisites
 
-State Management: Redux Toolkit
+- Node.js (v14.x or higher)
+- npm or yarn
+- Python 3.x (if using Flask for NLP service)
 
-Routing: React Router v6
+---
 
-Backend: Node.js + Express.js OR Python Flask for AI microservice APIs
+## 🖥️ Installation & Setup
 
-NLP: HuggingFace Transformers (BERT / DistilBERT)
+1. **Clone the repository:**
 
-Database: MongoDB / Firebase Firestore
+   ```bash
+   git clone https://github.com/yourusername/neuroscribe.git
+   cd neuroscribe
+   
+2. **Install frontend dependencies:**
+   
+   ```bash
+   npm install
+   # or
+   yarn install
+3. **Start frontend development server:**
+   
+    ```bash
+   npm start
+   # or
+   yarn start
 
-Authentication: Firebase Auth / JWT
+4. **Set up backend API::**
 
-Data Visualisation: D3.js, Recharts
+- Navigate to the backend/ folder
 
-Animations: Framer Motion
+- Install backend dependencies
 
-Deployment: Vercel / Netlify (frontend), Render / Railway (backend)
+- Start the backend server
 
-📋 Prerequisites
-Node.js (v14.x or higher)
-
-npm or yarn
-
-Python 3.x (if using Flask microservice for NLP)
-
-🖥️ Installation & Setup
-Clone the repository:
-
-bash
-Copy
-Edit
-git clone https://github.com/yourusername/neuroscribe.git
-cd neuroscribe
-Install frontend dependencies:
-
-bash
-Copy
-Edit
-npm install
-# or
-yarn install
-Start frontend development server:
-
-bash
-Copy
-Edit
-npm start
-# or
-yarn start
-Set up backend API:
-
-Navigate to the backend folder
-
-Install dependencies
-
-Start the backend server
-
-Set environment variables in .env file for API URLs, database URI, and API keys.
+5. **Set environment variables in a .env file for API URLs, database URI, and API keys.**
 
 📁 Project Structure
 bash
@@ -99,7 +90,7 @@ neuroscribe/
 ├── package.json         # Project dependencies and scripts
 └── README.md            # Project documentation
 🧠 AI/NLP Integration
-This project uses HuggingFace Transformers for sentiment analysis:
+Uses HuggingFace Transformers for sentiment analysis:
 
 Model: DistilBERT (sentiment classification)
 
@@ -141,6 +132,9 @@ const ProjectRoutes = () => {
 };
 
 export default ProjectRoutes;
+📊 Data Visualisation
+This app uses D3.js and Recharts to plot user emotion trends weekly and monthly for better mental health awareness.
+
 📦 Deployment
 Build for production:
 
@@ -153,6 +147,15 @@ Deploy frontend to Vercel/Netlify and backend to Render/Railway/Heroku.
 📱 Mobile App Version
 A React Native version is planned to extend NeuroScribe to Android and iOS with the same backend API for seamless cross-platform usage.
 
+💡 Future Enhancements
+Voice note input with speech-to-text
+
+Personalised AI suggestions based on user trends
+
+Dark mode support
+
+Full offline capability
+
 🙏 Acknowledgements
 React – Frontend library
 
@@ -164,19 +167,14 @@ Framer Motion – Animations
 
 Spotify API – Music suggestions
 
-Firebase – Authentication & Firestore
-
-💡 Future Enhancements
-Voice note input with speech-to-text
-
-Personalised AI suggestions based on user trends
-
-Dark mode support
-
-Full offline capability
+Firebase – Authentication and Firestore
 
 ❤️ Built With
-Built with passion to merge mental health awareness with productivity using modern web technologies.
+Built with passion to merge mental health awareness with productivity using modern web and AI technologies.
 
 ✨ Connect with Me
 LinkedIn | GitHub
+
+
+
+
