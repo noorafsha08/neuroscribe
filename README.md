@@ -126,7 +126,7 @@ neuroscribe/
 ---
 ```
 ## 🧠 AI/NLP Integration
-``
+
 ### ⚗️ Option 1 – Using Flask microservice:
 
 - Set up a Python Flask server with HuggingFace Transformers.
@@ -188,7 +188,7 @@ This app uses **D3.js and Recharts** to plot user emotion trends weekly and mont
 ---
 
 ## 📦 Deployment
-``
+
 ### ⚙️ Build for production:
 
 - `npm run build`
