@@ -124,6 +124,30 @@ neuroscribe/
 └── README.md # Project documentation
 
 
+## 📁 Project Structure
+
+| Path             | Description                        |
+|------------------|------------------------------------|
+| backend/         | Node.js / Flask API server        |
+| ├── controllers/ | API logic controllers             |
+| ├── models/      | Database models                   |
+| ├── routes/      | API routes                        |
+| ├── app.js       | Express app configuration         |
+| └── server.js    | Entry point for backend           |
+| frontend/        | React frontend application        |
+| ├── public/      | Static assets                     |
+| ├── src/         | Source code folder                |
+| │ ├── components/| Reusable UI components            |
+| │ ├── pages/     | Page components                   |
+| │ ├── styles/    | Tailwind and global styles        |
+| │ ├── App.jsx    | Main app component                |
+| │ ├── Routes.jsx | Application routes                |
+| │ └── index.jsx  | Entry point                       |
+| .env             | Environment variables             |
+| package.json     | Project dependencies and scripts  |
+| README.md        | Project documentation             |
+
+
 ---
 
 ## 🧠 AI/NLP Integration
@@ -179,6 +203,9 @@ const ProjectRoutes = () => {
 };
 
 export default ProjectRoutes;
+
+---
+
 ## 📊 Data Visualisation
 
 This app uses **D3.js and Recharts** to plot user emotion trends weekly and monthly for better mental health awareness.
